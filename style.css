@@ -88,7 +88,6 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid #1F2937; /* temp */
 }
 
 .info-text {
@@ -113,4 +112,31 @@ li {
     text-align: center;
     margin-top: 50px;
     width: 350px;
+}
+
+/* Third part */
+
+.third-part {
+    padding: 100px;
+    background: #E5E7EB;
+    border-bottom: 1px solid #1F2937; /* temp */
+}
+
+.third-part .quote{
+    width: 60%;
+    margin: auto;
+    color: #1F2937;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 36px;
+    text-align: left;
+}
+
+.third-part .text {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: right;
 }
