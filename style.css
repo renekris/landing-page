@@ -23,7 +23,7 @@ li {
 /* Header */
 
 .header {
-    padding: 25px;
+    padding: 25px 0px;
     color: white;
     background-color: #1F2937;
     font-size: 24px;
@@ -44,7 +44,7 @@ li {
 /* First part */
 
 .first-part {
-    padding: 100px;
+    padding: 100px 0px;
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
@@ -54,21 +54,20 @@ li {
     gap: 30px;
 }
 
-.first-part img {
-    width: 650px;
-    height: auto;
-}
-
 .first-part .text {
-    min-width: 600px;
-    max-width: 800px;
-    font-size: 48px;
+    width: 505px;
+    font-size: 35px;
     font-weight: 900;
 }
 
-.first-part .text p {
+.first-part p {
+    margin: 0px;
     color: #E5E7EB;
     font-size: 18px;
+}
+
+.first-part h1 {
+    margin: 0px auto;
 }
 
 .first-part button {
@@ -81,19 +80,38 @@ li {
     color: white;
 }
 
+.first-part img {
+    width: 500px;
+    height: auto;
+}
+
+@media only screen and (max-width: 1036px) {
+    .first-part img {
+        width: 75%;
+        height: auto;
+    }
+
+    .first-part .text {
+        width: 505px;
+        font-size: 35px;
+        font-weight: 900;
+        text-align: center;
+    }
+}
+
 /* Second part */
 
 .second-part {
-    padding: 100px;
+    padding: 100px 0px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .info-text {
     color: #1F2937;
     font-size: 36px;
     font-weight: 900;
+    text-align: center;
 }
 
 .img-boxes {
@@ -117,13 +135,13 @@ li {
 /* Third part */
 
 .third-part {
-    padding: 100px;
+    padding: 100px 0px;
     background: #E5E7EB;
     border-bottom: 1px solid #1F2937; /* temp */
 }
 
 .third-part .quote{
-    width: 60%;
+    width: 80%;
     margin: auto;
     color: #1F2937;
     font-weight: lighter;
@@ -133,10 +151,50 @@ li {
 }
 
 .third-part .text {
-    width: 60%;
+    width: 80%;
     margin: auto;
     padding: 10px;
     font-weight: 700;
     font-size: 24px;
     text-align: right;
+}
+
+/* Fourth part */
+
+.fourth-part {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth-part .modal {
+    padding: 25px;
+    max-width: 500px;
+    background: #3882F6;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.fourth-part p {
+    margin: 5px auto;
+}
+
+.fourth-part .text {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.fourth-part button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #3882F6;
+    color: white;
+    border: 2px solid #F9FAF8;
+    flex-shrink: 0;
 }
